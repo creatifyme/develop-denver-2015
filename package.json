@@ -14,7 +14,8 @@
   "keywords": [],
   "dependencies": {
     "lodash": "^3.5.0",
-    "twitter": "^1.2.5"
+    "twitter": "^1.2.5",
+    "rx": "^3.0.0"
   },
   "devDependencies": {
     "babelify": "^5.0.3",
