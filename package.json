@@ -1,0 +1,35 @@
+{
+  "name": "big-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "www/index.html",
+  "scripts": {
+    "test": "tape test/index.js",
+    "js": "browserify -t babelify -o www/js/bundle.js src/js/index.js",
+    "js:watch": "watchify -t babelify -o www/js/bundle.js src/js/index.js",
+    "serve": "static -H '{\"Cache-Control\": \"no-cache, must-revalidate\"}' www",
+    "lint": "standard",
+    "test": "npm run lint",
+    "deploy": "npm run test && surge www big-data.surge.sh"
+  },
+  "keywords": [],
+  "dependencies": {
+    "lodash": "^3.5.0"
+  },
+  "devDependencies": {
+    "babelify": "^5.0.3",
+    "browserify": "^9.0.3",
+    "node-static": "^0.7.6",
+    "tape": "^3.5.0",
+    "standard": "^3.3.0",
+    "watchify": "^2.4.0",
+    "surge": "^0.7.4",
+    "watch": "^0.14.0"
+  },
+  "standard": {
+    "ignore": [
+      "bower_components/**",
+      "node_modules/**"
+    ]
+  }
+}
