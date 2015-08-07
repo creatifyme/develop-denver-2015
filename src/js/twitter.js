@@ -1,6 +1,5 @@
 import Twitter from 'twitter'
 import {EventEmitter} from 'events'
-import ws from 'ws'
 
 function makeConnection ({key, secret, acc_key, acc_secret, api, track}) {
 
@@ -17,7 +16,7 @@ function makeConnection ({key, secret, acc_key, acc_secret, api, track}) {
     client.get(api, {track: track}, function(err, tweets, res) {
 
       // bail
-      if(error) {
+      if(err) {
         emitter.emit('error', err)
       }
 
