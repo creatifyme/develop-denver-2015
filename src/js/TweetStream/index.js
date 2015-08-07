@@ -4,6 +4,6 @@ import {
 } from 'rx'
 
 export default socket => Observable.create(obs => {
-  socket.on('data', data => obs.onNext(data))
-  socket.on('errot', data => obs.onError(data))
+  socket.on('message', data => obs.onNext(data))
+  socket.on('error', data => obs.onError(data))
 })
