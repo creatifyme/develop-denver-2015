@@ -1,4 +1,4 @@
 /**
  * Dependencies
  */
-import _ from 'lodash'
+import speakerbox from './modules/speakerbox'
