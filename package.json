@@ -13,9 +13,10 @@
   },
   "keywords": [],
   "dependencies": {
+    "hyperquest": "^1.2.0",
     "lodash": "^3.5.0",
-    "twitter": "^1.2.5",
-    "rx": "^3.0.0"
+    "rx": "^3.0.0",
+    "twitter": "^1.2.5"
   },
   "devDependencies": {
     "babelify": "^5.0.3",
