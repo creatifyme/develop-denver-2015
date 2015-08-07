@@ -1,8 +1,7 @@
-import tw from 'twitter'
+import Twitter from 'twitter'
 import {EventEmitter} from 'events'
 
-function makeConnection (options) {
-  {key, secret, acc_key, acc_secret, api, track} = options
+function makeConnection ({key, secret, acc_key, acc_secret, api, track}) {
 
   const client = new Twitter({
     consumer_key: key,
