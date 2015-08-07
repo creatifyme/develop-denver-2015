@@ -5,7 +5,7 @@ import TweetStream from './TweetStream'
 import twitter from './twitter'
 
 const words = string => string.split(' ')
-const tweetBody = tweet = tweet.body
+// const tweetBody = tweet = tweet.body
 
 TweetStream(twitter({
   api: 'statuses/filter',
@@ -15,6 +15,5 @@ TweetStream(twitter({
   acc_key: '64105403-amFRWE4lPkI7wJYki567wT03heqpAFX4LSnX4qert',
   acc_secret: 'CUfVO9nOOG3dyxArp4ViuU1DFrQosNhL9ncLAtex6CmBp',
 }))
-  .map(tweetBody)
-  .map(words)
+  // .map(words)
   .subscribe(data => console.log(data))
