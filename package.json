@@ -4,17 +4,17 @@
   "description": "",
   "main": "www/index.html",
   "scripts": {
-    "test": "tape test/index.js",
+    "test": "npm run lint",
     "js": "browserify -t babelify -o www/js/bundle.js src/js/index.js",
     "js:watch": "watchify -t babelify -o www/js/bundle.js src/js/index.js",
     "serve": "static -H '{\"Cache-Control\": \"no-cache, must-revalidate\"}' www",
     "lint": "standard",
-    "test": "npm run lint",
     "deploy": "npm run test && surge www big-data.surge.sh"
   },
   "keywords": [],
   "dependencies": {
-    "lodash": "^3.5.0"
+    "lodash": "^3.5.0",
+    "twitter": "^1.2.5"
   },
   "devDependencies": {
     "babelify": "^5.0.3",
