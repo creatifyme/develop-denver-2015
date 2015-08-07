@@ -1,6 +1,6 @@
 var speakWorker;
 try {
-  speakWorker = new Worker('speakWorker.js');
+  speakWorker = new Worker('js/speakWorker.js');
 } catch(e) {
   console.log('speak.js warning: no worker support');
 }
@@ -102,4 +102,3 @@ function speak(text, args) {
     speakWorker.postMessage({ text: text, args: args });
   }
 }
-

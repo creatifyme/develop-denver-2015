@@ -20,11 +20,12 @@
     "babelify": "^5.0.3",
     "browserify": "^9.0.3",
     "node-static": "^0.7.6",
-    "tape": "^3.5.0",
     "standard": "^3.3.0",
-    "watchify": "^2.4.0",
     "surge": "^0.7.4",
-    "watch": "^0.14.0"
+    "tape": "^3.5.0",
+    "tts-speak": "^1.1.0",
+    "watch": "^0.14.0",
+    "watchify": "^2.4.0"
   },
   "standard": {
     "ignore": [
